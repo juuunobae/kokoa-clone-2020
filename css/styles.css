@@ -4,9 +4,16 @@
 /* Componens */
 @import 'componentes/status-bar.css';
 @import 'componentes/nav-bar.css';
+@import 'componentes/screen-hader.css';
+@import 'componentes/user-component.css';
 
 /* Screens */
 @import 'screen/login.css';
+@import 'screen/friends.css';
+
+body {
+    color: #2e363e;
+}
 
 
 .welcome-header {

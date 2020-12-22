@@ -11,10 +11,12 @@
 /* Screens */
 @import 'screen/login.css';
 @import 'screen/friends.css';
+@import 'screen/find.css';
 
 body {
     color: #2e363e;
     padding-top: 18px;
+    padding-bottom: 90px;
 }
 
 .main-screen {

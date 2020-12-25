@@ -3,6 +3,11 @@
     align-items: center;
     justify-content: center;
     padding: 15px var(--horizontal-space);
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #abc1d1;
+    z-index: 1;
 }
 
 .alt-header__column span{

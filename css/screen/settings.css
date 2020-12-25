@@ -1,0 +1,26 @@
+.settings-setting {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--main-border);
+    padding: 20px 0px;
+    font-size: 23px;
+}
+
+.settings-setting:last-child {
+    border-bottom: none;   
+}
+
+.settings-setting__column {
+    display: flex;
+    align-items: center;
+}
+
+.settings-setting__column i {
+    margin-right: 15px;
+    opacity: 0.7;
+}
+
+.settings-setting__column:last-child {
+    opacity: 0.3;
+}
+

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Chats - Kokoa Talk</title>
+    <title>Settings - Kokoa Talk</title>
 </head>
 
 <body>
@@ -24,33 +24,46 @@
         </div>
     </div>
 
-    <header class="screen-header">
-        <div class="screen-header__title">Chats</div>
-        <div class="screen-header__icon">
-            <span><i class="fas fa-search fa-lg"></i></span>
-            <span><i class="far fa-comment-dots fa-lg"></i></span>
-            <span><i class="fas fa-music fa-lg"></i></span>
-            <a href="settings.html">
-                <span><i class="fas fa-cog fa-lg"></i></span>
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="more.html">
+                <i class="fas fa-chevron-left fa-2x"></i>
             </a>
+        </div>
+        <div class="alt-header__column">
+            <span>Settings</span>
+        </div>
+        <div class="alt-header__column">
+            <i class="fas fa-search fa-2x"></i>
         </div>
     </header>
 
     <main class="main-screen">
-        <div class="user-component">
-            <div class="user-component__column">
-                <img class="user-component__avatar user-component__avatar--xl" src="screenshot/k.jpeg" alt="">
-                <div class="user-component__text">
-                    <h4 class="user-component__title">Nicolas</h4>
-                    <h6 class="user-component__subtitle">Please Check My Kakao Account Info</h6>
+        <ul class="settings">
+            <li class="settings-setting">
+                <div class="settings-setting__column">
+                    <i class="fas fa-bullhorn fa-sm"></i>
+                    <span>Notices</span>
                 </div>
-            </div>
-            <div class="user-component__column">
-                <span class='user-component__time'>21:22</span>
-                <div class='badge'>1</div>
-            </div>
-        </div>
-
+                <div class="settings-setting__column"></div>
+            </li>
+            <li class="settings-setting">
+                <div class="settings-setting__column">
+                    <i class="fas fa-flask fa-sm"></i>
+                    <span>Kakao Lab</span>
+                </div>
+                <div class="settings-setting__column"></div>
+            </li>
+            <li class="settings-setting">
+                <div class="settings-setting__column">
+                    <i class="fas fa-info-circle fa-sm"></i>
+                    <span>Version</span>
+                </div>
+                <div class="settings-setting__column">
+                    Latest Version
+                </div>
+            </li>
+        </ul>
     </main>
 
 

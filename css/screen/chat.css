@@ -1,6 +1,6 @@
 #chat-screen {
     background-color: #abc1d1;
-    height: 1000vh;
+    height: 500vh;
 }
 
 #chat-screen .status-bar {
@@ -90,6 +90,7 @@
     padding: 5px 10px 5px 0px;
     background-color: white;
     box-sizing: border-box;
+    transition: all 0.8s ease-in-out;
 }
 
 .reply__column {
@@ -115,7 +116,6 @@
     border: var(--main-border);
     padding: 0px 10px;
     font-size: 15px;
-    opacity: 0.5;
 }
 
 .reply__column>i {
@@ -145,3 +145,52 @@
     outline: none;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+@keyframes messageBubbleSlideLeftLight {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes messageBubbleSlideRightLeft{
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.message-row {
+    animation: messageBubbleSlideLeftLight 0.8s linear;
+}
+
+.message-row--own {
+    animation: messageBubbleSlideRightLeft 0.8s linear;
+}
+
+.reply input {
+    transition: all 0.8s ease-in-out;
+}
+
+.reply:focus-within input {
+    transform: translateX(-5%) translateY(-60px);
+}
+
+.reply:focus-within {
+    transform: translateY(60px);
+}
